@@ -96,8 +96,8 @@ body {
   padding: 40px 160px;
 }
 
-.slides.template-default > article:not(.nobackground):not(.biglogo) {
-  /* background: url(images/google-logo-small.png) 710px 625px no-repeat; */
+.slides.template-default > article:not(.nobackground):not(.biglogo):not(.cover) {
+  background: url(images/git-logo-2color.png) 640px 580px no-repeat;
   
   background-color: white;  
 } 
@@ -358,6 +358,10 @@ h3 {
   color: rgb(51, 51, 51);
 }
 
+h3.centered {
+  text-align: center;
+}
+
 article.fill h3 {
   background: rgba(255, 255, 255, .75);
   padding-top: .2em;
@@ -417,6 +421,12 @@ pre {
   box-shadow: inset 0 2px 6px rgba(0, 0, 0, .1);
   
   overflow: hidden;
+}
+
+pre.smaller {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0;
 }
 
 code {
